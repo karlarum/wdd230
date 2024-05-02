@@ -30,7 +30,7 @@ header img {
 
 h1 {
     text-align: center;
-    color: #2f4858;
+    color: black;
 }
 
 nav {
@@ -73,7 +73,7 @@ h2 {
 h3 {
     text-align: center;
     background-color: #86bbd8;
-    color: #2f4858;
+    color: black;
     border-radius: 5px 5px 0 0;
     padding: 1rem;
 }
