@@ -1,0 +1,20 @@
+@media screen and (max-width: 480px) {
+    #menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    .map {
+        grid-column: span 2;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 25px;
+    }
+}
