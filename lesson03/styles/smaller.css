@@ -1,0 +1,16 @@
+@media screen and (max-width: 540px) {
+
+    .card-container {
+        display: block;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+
+}
