@@ -8,14 +8,14 @@ body {
 h2 {
     text-align: center;
     padding-top: 1em;
-    color: #1D3557;
+    color: #25283D;
 }
 
 header {
     padding: 1em;
     text-align: center;
     color: #F1FAEE;
-    background-color: #1D3557;
+    background-color: #25283D;
     font-family: "Playfair Display";
 }
 
@@ -52,20 +52,19 @@ p {
 }
 
 .color1 {
-    background-color: #F1FAEE;
+    background-color: #AC3931;
 }
 
 .color2 {
-    background-color: #A8DADC;
+    background-color: #F1FAEE;
 }
 
 .color3 {
-    background-color: #457B9D;
+    background-color: #A8DADC;
 }
 
 .color4 {
-    background-color: #1D3557;
-    color: white;
+    background-color: #25283D;
 }
 
 .card ul {
@@ -91,7 +90,7 @@ p {
 
 .card h3 {
     text-align: center;
-    background-color: #457B9D;
+    background-color: #AC3931;
     color: white;
     border-radius: 5px 5px 0 0;
     padding: 1rem;
@@ -115,8 +114,8 @@ section.card:nth-of-type(2) ul li:nth-child(3) {
 }
 
 .bottom-section h2 {
-    background-color: #1D3557;
-    color: #A8DADC;
+    background-color: #25283D;
+    color: white;
     padding-bottom: 2rem;
 }
 
