@@ -69,7 +69,7 @@
     .info-box {
         grid-column: 1;
         padding: 100px;
-        background-color: rgb(167, 216, 197);
+        background-color: #F1FAEE;
     }
 
     .info-box p {
