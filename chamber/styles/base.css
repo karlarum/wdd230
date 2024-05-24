@@ -111,6 +111,7 @@ main {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 20px;
+    height: 99%;
     position: absolute;
     top: 0;
     left: 0;
@@ -260,4 +261,13 @@ footer {
     text-align: center;
     grid-column: 1 / 3;
     color: #daf7dc;
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 2rem;
 }
