@@ -14,6 +14,78 @@ body {
     margin: 0;
 }
 
+/* toggle button */
+
+.b {
+    display: block;
+}
+
+.toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #ddd;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, .05);
+    z-index: 1000;
+}
+
+.check {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 6;
+}
+
+.check:checked~.track {
+    box-shadow: inset 0 0 0 20px #4bd863;
+}
+
+.check:checked~.switch {
+    right: 2px;
+    left: 22px;
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition-property: left, right;
+    transition-delay: .05s, 0s;
+}
+
+.switch {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    bottom: 2px;
+    right: 22px;
+    background-color: #fff;
+    border-radius: 36px;
+    z-index: 1;
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition-property: left, right;
+    transition-delay: 0s, .05s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.track {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .05);
+    border-radius: 40px;
+}
+
+/* header & nav */
+
 header {
     background: #AC3931;
     padding: 2rem;
@@ -65,6 +137,8 @@ nav.open ul {
     text-decoration: none;
     color: #fff;
 }
+
+/* body */
 
 .home-grid {
     width: 100%;
@@ -249,11 +323,14 @@ iframe {
     grid-column: 1/-1;
     text-align: center;
     padding: 30px;
+    box-shadow: 5px 5px 10px grey;
 }
 
 .info-box h2 {
     padding-bottom: 10px;
 }
+
+/* footer */
 
 footer {
     background: #25283D;
@@ -263,11 +340,72 @@ footer {
     color: #daf7dc;
 }
 
-#mode {
+/* toggle button */
+
+.b {
+    display: block;
+}
+
+.toggle {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 3rem;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #ddd;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, .05);
+    z-index: 1000;
+}
+
+.check {
+    position: absolute;
+    display: block;
     cursor: pointer;
-    font-size: 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 6;
+}
+
+.check:checked~.track {
+    box-shadow: inset 0 0 0 20px #4bd863;
+}
+
+.check:checked~.switch {
+    right: 2px;
+    left: 22px;
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition-property: left, right;
+    transition-delay: .05s, 0s;
+}
+
+.switch {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    bottom: 2px;
+    right: 22px;
+    background-color: #fff;
+    border-radius: 36px;
+    z-index: 1;
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition-property: left, right;
+    transition-delay: 0s, .05s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.track {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .05);
+    border-radius: 40px;
 }
