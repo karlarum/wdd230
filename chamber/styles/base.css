@@ -146,6 +146,7 @@ nav.open ul {
 
 #menu {
     display: block;
+    height: 30px;
 }
 
 #menu::before {
