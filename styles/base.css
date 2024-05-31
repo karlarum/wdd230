@@ -92,6 +92,38 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
+.hero {
+    margin: 10px auto;
+    position: relative;
+    grid-column: 1/-1;
+    height: 300px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-label {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #ecedf3);
+    border: rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    color: black;
+}
+
+.hero-label p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 h2 {
     text-align: center;
     grid-column: 1/-1;
