@@ -48,7 +48,14 @@
 
     <main class="home-grid">
         <section id="hero-box">
-            <img class="hero-image" src="images/rockybayou.jpg" alt="Rocky Bayou Country Club">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/hero-large.webp" alt="Chamber Team Meeting" width="1500" height="750">
+                </picture>
+            </div>
+            <!-- <img class="hero-image" src="images/rockybayou.webp" alt="Rocky Bayou Country Club"> -->
             <div class="text">
                 <h2>PROMOTE AN UPCOMING EVENT</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi illum earum ullam quae facere incidunt
@@ -66,9 +73,9 @@
         <section class="card">
             <h3>Weather</h3>
             <ul>
-                <li><a>1 template placeholder</a></li>
-                <li><a>2 template placeholder</a></li>
-                <li><a>3 template placeholder</a></li>
+                <li><a>Temperature: <span id="temperature">49</span>&degF</a></li>
+                <li><a>Wind Speed: <span id="windspeed">11</span> mph</a></li>
+                <li><a>Wind Chill: <span id="windchill">N/A</span></a></li>
             </ul>
         </section>
         <section class="card">
@@ -118,6 +125,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/hero.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
