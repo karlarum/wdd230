@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Demonstration</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Load Demonstration</h1>
+    </header>
+    <main>
+        <picture><img src="https://loremflickr.com/400/600" alt="random generated image" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="https://picsum.photos/400/600" alt="random generated image" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="https://placebear.com/400/600" alt="random generated image" loading="lazy" width="400"
+                height="600"></picture>
+        <picture><img src="https://loremflickr.com/400/650" alt="random generated image" loading="lazy" width="400"
+                height="650"></picture>
+        <picture><img src="https://picsum.photos/400/700" alt="random generated image" loading="lazy" width="400"
+                height="700"></picture>
+        <picture><img src="https://placebear.com/400/750" alt="random generated image" loading="lazy" width="400"
+                height="750"></picture>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | Karla C. Rummler | USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>
