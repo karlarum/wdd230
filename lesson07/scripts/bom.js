@@ -2,34 +2,57 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 const clearButton = document.querySelector('#clear');
+const error = document.querySelector('#error')
+
+let chaptersArray = getChapterList() || [];
+
+chaptersArray.forEach(chapter => {
+    displayList(chapter);
+});
+
+
+function getChapterList() {
+    return [];
+}
+
+function displayList(item) {
+    let li = document.createElement('li');
+    let deleteButton = document.createElement('button');
+    li.textContent = item;
+    deleteButton.textContent = '❌';
+    deleteButton.classList.add('delete');
+    li.append(deleteButton);
+    list.append(li)
+    deleteButton.addEventListener('click', function () {
+        list.removeChild(li);
+        deleteChapter(li.textContent);
+        input.focus();
+    });
+}
 
 button.addEventListener('click', () => {
-    const chapter = input.value.trim();
-    if (chapter !== '') {
-        // Check for duplicates
-        const existingChapters = Array.from(list.querySelectorAll('li')).map(li => li.firstChild.textContent);
-        if (existingChapters.includes(chapter)) {
-            error.textContent = 'Chapter already added!';
-        } else {
-            const li = document.createElement('li');
-            const deleteButton = document.createElement('button');
-            li.textContent = chapter;
-            deleteButton.textContent = '❌';
-            deleteButton.classList.add('delete');
-            li.append(deleteButton);
-            list.append(li);
-            deleteButton.addEventListener('click', () => {
-                list.removeChild(li);
-                input.focus();
-            });
-            input.focus();
-            input.value = '';
-            error.textContent = '';
-        }
-    } else {
-        error.textContent = 'Please enter a chapter!';
+    if (input.value != '') {
+        displayList(input.value);
+        chaptersArray.push(input.value);
+        setChapterList();
+        input.value = '';
+        input.focus();
     }
 });
+
+function setChapterList() {
+    localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
+}
+
+function getChapterList() {
+    return JSON.parse(localStorage.getItem('myFavBOMList'));
+}
+
+function deleteChapter(chapter) {
+    chapter = chapter.slice(0, chapter.length - 1);
+    chaptersArray = chaptersArray.filter(item => item !== chapter);
+    setChapterList();
+}
 
 // Function to clear all chapters
 clearButton.addEventListener('click', () => {
@@ -37,14 +60,3 @@ clearButton.addEventListener('click', () => {
     input.focus();
     error.textContent = '';
 });
-
-//new function
-function getChapterList() {
-    return [1, 2, 3];
-
-    const input = document.querySelector('#favchap');
-    const button = document.querySelector('button');
-    const list = document.querySelector('#list');
-
-    let chaptersArray = getChapterList() || [];
-}
