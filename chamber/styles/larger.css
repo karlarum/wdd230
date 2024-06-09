@@ -86,18 +86,19 @@
         padding-right: 0px;
         padding-bottom: 0px;
     }
-}
 
-/* DISCOVER PAGE */
+    /* DISCOVER PAGE */
 
-.sidebar {
-    max-width: 500px;
-}
+    .sidebar {
+        max-width: 500px;
+        margin-left: 165px;
+    }
 
-.maincontent img {
-    padding: 20px;
-}
+    .maincontent img {
+        padding: 20px;
+    }
 
-.maincontent img:hover {
-    box-shadow: 0 0 50px #333;
+    .maincontent img:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }

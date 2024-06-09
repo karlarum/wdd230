@@ -498,12 +498,14 @@ footer {
     height: auto;
 }
 
-.maincontent img:hover {
-    box-shadow: none;
-}
-
 .discover-grid {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+}
+
+.caption {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
 }
