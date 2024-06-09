@@ -87,3 +87,17 @@
         padding-bottom: 0px;
     }
 }
+
+/* DISCOVER PAGE */
+
+.sidebar {
+    max-width: 500px;
+}
+
+.maincontent img {
+    padding: 20px;
+}
+
+.maincontent img:hover {
+    box-shadow: 0 0 50px #333;
+}
