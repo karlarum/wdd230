@@ -435,7 +435,7 @@ footer {
 .number,
 .description {
     display: block;
-    background-color: green;
+    background-color: #006100;
     text-align: center;
     justify-content: center;
     align-items: center;
