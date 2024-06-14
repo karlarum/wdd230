@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karla Rummler - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Karla Chanel Rummler's form sheet">
+    <meta name="author" content="Karla Rummler">
+    <meta property="og:title" content="Karla Rummler - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1616984366240-479bd31d60ef?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://karlarum.github.io/wdd230/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/karlarummler.webp" alt="Karla Rummler profile">
+        </picture>
+        <h1>Karla C. Rummler</h1>
+    </header>
+
+    <button id="menu"></button>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="formmessage"></div>
+        <h1>Course Proposal Application</h1>
+        <form method="get" action="record.html" class="wf1">
+            <fieldset>
+                <legend>User Information</legend>
+                <label>Username* <input type="text" id="username" name="username" required></label>
+                <label>Password* <input type="password" id="password" name="password" required
+                        pattern="[A-Za-z0-9]{8,}"></label>
+                <label>Confirm Password* <input type="password" id="password2" name="password2" required></label>
+                <label>Email* <input type="email" id="email" name="email" placeholder="yourname@byui.edu"
+                        title="A valid byui.edu address" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+                <input type="submit" value="Validate">
+                <!-- <label>Page Rating <div id="rangevalue">0</div><input type="range" id="rating" name="rating" min="0"
+                        max="10" value="0" step="1" list="rangevalues"></label> -->
+                <label>Page Rating</label>
+                <div>
+                    <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1"
+                        list="rangevalues">
+                    <output id="rangevalue">0</output>
+                </div>
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
+
+            <input type="submit" value="Register">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> | Karla C. Rummler | USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/pagevisits.js"></script>
+    <script src="scripts/form.js"></script>
+
+</body>
+
+</html>

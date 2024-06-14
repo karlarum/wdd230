@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #445ba9;
+    --accent-color: #9c2c13;
+    --border-radius: 6px;
+}
+
+main {
+    grid-template-columns: none;
+    justify-content: center;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: .5rem 2%;
+}
+
+
+.wf1 legend {
+    color: var(--primary-color);
+    padding: 0 .5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--accent-color);
+    font-size: .9rem;
+}
+
+.wf1 input[type="range"] {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.wf1 #rangevalue {
+    font-size: 1rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    color: var(--primary-color);
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="password"],
+.wf1 input[type="email"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: var(--border-radius);
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--accent-color), #6f200e);
+    color: #fff;
+    border-radius: var(--border-radius);
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input[type="submit"][value="Validate"] {
+    margin: 2rem 0;
+    margin-bottom: 1rem;
+}
+
+.wf1 input[type="submit"][value="Register"] {
+    margin: -1rem 2% 2rem 2%;
+}
+
+.wf1 input:required {
+    border-right: solid 8px red;
+}
+
+.wf1 input:required:valid {
+    border-right: solid 8px green;
+}
