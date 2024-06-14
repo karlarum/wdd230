@@ -16,7 +16,6 @@ main {
     padding: .5rem 2%;
 }
 
-
 .wf1 legend {
     color: var(--primary-color);
     padding: 0 .5rem;
@@ -74,12 +73,6 @@ main {
     max-width: 400px;
     box-shadow: 1px 1px 4px #999;
 }
-
-/* 
-.wf1 input[type="submit"][value="Validate Email"] {
-    margin: 2rem 0;
-    margin-bottom: 1rem;
-} */
 
 .wf1 input:required {
     border-right: solid 8px red;
