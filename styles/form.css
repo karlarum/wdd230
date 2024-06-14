@@ -36,6 +36,7 @@ main {
 
 .wf1 #rangevalue {
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .wf1 div {
@@ -58,6 +59,10 @@ main {
     appearance: none;
 }
 
+.wf1 input[type="email"] {
+    margin-bottom: 0.5rem;
+}
+
 .wf1 input[type="submit"] {
     border: none;
     background-image: linear-gradient(var(--accent-color), #6f200e);
@@ -65,18 +70,16 @@ main {
     border-radius: var(--border-radius);
     padding: .8rem;
     width: 100%;
+    margin: -1rem 2% 5rem 1%;
     max-width: 400px;
     box-shadow: 1px 1px 4px #999;
 }
 
+/* 
 .wf1 input[type="submit"][value="Validate Email"] {
     margin: 2rem 0;
     margin-bottom: 1rem;
-}
-
-.wf1 input[type="submit"][value="Register Course Proposal"] {
-    margin: -1rem 2% 0 1%;
-}
+} */
 
 .wf1 input:required {
     border-right: solid 8px red;
