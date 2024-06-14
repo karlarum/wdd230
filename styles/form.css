@@ -31,7 +31,7 @@ main {
 
 .wf1 input[type="range"] {
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: -1rem;
 }
 
 .wf1 #rangevalue {
@@ -69,13 +69,13 @@ main {
     box-shadow: 1px 1px 4px #999;
 }
 
-.wf1 input[type="submit"][value="Validate"] {
+.wf1 input[type="submit"][value="Validate Email"] {
     margin: 2rem 0;
     margin-bottom: 1rem;
 }
 
-.wf1 input[type="submit"][value="Register"] {
-    margin: -1rem 2% 2rem 2%;
+.wf1 input[type="submit"][value="Register Course Proposal"] {
+    margin: -1rem 2% 0 1%;
 }
 
 .wf1 input:required {
