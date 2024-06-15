@@ -3,4 +3,49 @@
     .card {
         font-size: 1em;
     }
+
+    /* Membership Application Form */
+
+    #msform {
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    #msform fieldset {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .radio-container input[type="radio"] {
+        margin-left: -150px;
+        margin-right: -150px;
+        margin-top: 5px;
+    }
+
+    /* Thank you page */
+
+    main.thanks {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    main.thanks h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    main.thanks p {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    main.thanks p:nth-child(2) {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    main.thanks p:nth-child(3) {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
 }

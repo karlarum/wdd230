@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niceville Chamber of Commerce Membership Application</title>
+    <meta name="description" content="Application for Niceville Chamber of Commerce Membership">
+    <meta name="author" content="Karla Rummler">
+    <meta property="og:title" content="Niceville Chamber of Commerce Membership Application">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1616984366240-479bd31d60ef?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    <meta property="og:url" content="https://karlarum.github.io/wdd230/chamber/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body class="chamber-form">
+    <div class="toggle">
+        <input type="checkbox" class="check">
+        <b class="b switch"></b>
+        <b class="b track"></b>
+    </div>
+    <header>
+        <h1>Niceville Chamber of Commerce</h1>
+    </header>
+
+    <button id="menu"></button>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="">Members</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Weather</a></li>
+            <li><a href="">Spotlights</a></li>
+        </ul>
+    </nav>
+
+    <main class="chamber-form">
+        <div class="benefits-grid">
+            <div class="membership-level">
+                <h3>NP Membership</h3>
+                <p><strong>Cost:</strong> No Fee</p>
+                <p>Access to basic networking events</p>
+                <p>Inclusion in the Chamber's business directory</p>
+                <p>Basic listing on the Chamber's website</p>
+            </div>
+
+            <div class="membership-level">
+                <h3>Bronze Membership</h3>
+                <p><strong>Cost:</strong> $100/year</p>
+                <p>All NP Membership benefits</p>
+                <p>Spotlight position on the Chamber's website homepage once a year</p>
+                <p>Access to exclusive member-only events</p>
+                <p>5% discount on Chamber events and workshops</p>
+            </div>
+
+            <div class="membership-level">
+                <h3>Silver Membership</h3>
+                <p><strong>Cost:</strong> $250/year</p>
+                <p>All Bronze Membership benefits</p>
+                <p>Featured spotlight on the Chamber's website homepage twice a year</p>
+                <p>Free admission to select Chamber events</p>
+                <p>10% discount on Chamber-hosted events</p>
+                <p>Eligibility to join Chamber committees</p>
+            </div>
+
+            <div class="membership-level">
+                <h3>Gold Membership</h3>
+                <p><strong>Cost:</strong> $500/year</p>
+                <p>All Silver Membership benefits</p>
+                <p>Quarterly feature in the Chamber's newsletter</p>
+                <p>Unlimited spotlight positions on the Chamber's website homepage</p>
+                <p>Free booth at Chamber expos and trade shows</p>
+                <p>Exclusive training sessions and workshops</p>
+                <p>VIP access to all Chamber events</p>
+                <p>Custom marketing support from the Chamber's team</p>
+            </div>
+        </div>
+        <form id="msform" method="get" action="thanks.html" class="wf1">
+            <ul id="progressbar">
+                <li class="active">Account Setup</li>
+                <li>Social Profiles</li>
+                <li>Personal Details</li>
+            </ul>
+            <fieldset>
+                <h2 class="fs-title">Applicant Information</h2>
+                <h3 class="fs-subtitle">Step 1 of 3</h3>
+                <label><input type="text" name="fname" id="fname" placeholder="First Name" required></label>
+                <label><input type="text" name="lname" id="lname" placeholder="Last Name" required></label>
+                <label><input type="text" name="title" id="title" pattern="[A-Za-z\s-]{7,}" placeholder="Title"
+                        required></label>
+                <label><input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                <label><input type="tel" name="phone" id="phone" placeholder="Mobile Phone Number" required></label>
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Business Information</h2>
+                <h3 class="fs-subtitle">Step 2 of 3</h3>
+                <label><input type="text" name="business" id="business" placeholder="Business or Organization Name"
+                        required></label>
+                <label><input type="text" id="description" name="description" placeholder="Description"></label>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Membership Level</h2>
+                <h3 class="fs-subtitle">Step 3 of 3</h3>
+                <div class="radio-container">
+                    <label><input type="radio" name="membership" value="np"> NP Membership | No Fee</label>
+                    <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                </div>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> | Karla Rummler | Chamber Project WDD 230</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/hidden.js"></script>
+    <script src="scripts/slides.js"></script>
+</body>
+
+</html>

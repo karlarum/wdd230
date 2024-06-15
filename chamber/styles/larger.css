@@ -101,4 +101,64 @@
     .maincontent img:hover {
         box-shadow: 0 0 50px #333;
     }
+
+    /* Membership Application Form */
+
+    body.chamber-form main {
+        min-height: 69vh;
+    }
+
+    main.chamber-form {
+        grid-gap: 0px;
+    }
+
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        width: 800px;
+        align-items: center;
+        margin: 100px;
+    }
+
+    #msform {
+        width: 800px;
+        grid-column: 3/3;
+    }
+
+    .radio-container input[type="radio"] {
+        margin-left: -290px;
+        margin-right: -270px;
+        margin-top: 5px;
+    }
+
+    /* Thank you page */
+
+    main.thanks {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 69vh;
+    }
+
+    main.thanks h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    main.thanks p {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    main.thanks p:nth-child(2) {
+        margin-top: -100px;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    main.thanks p:nth-child(3) {
+        margin-left: 500px;
+        margin-right: 500px;
+        margin-top: -100px;
+    }
 }
