@@ -1,0 +1,45 @@
+{
+    "wardMembers": {
+        "familyName": "Huntington",
+        "moveInDate": "2000-01-01",
+        "numberOfPeople": 5,
+        "visited": true,
+        "familyMembers": [
+            {
+                "name": "Olivia Huntington",
+                "gender": "Female",
+                "birthdate": "2024-07-03"
+            },
+            {
+                "name": "Harold Huntington",
+                "gender": "Male",
+                "birthdate": "2022-11-03"
+            },
+            {
+                "name": "Charlotte Huntington",
+                "gender": "Female",
+                "birthdate": "2020-11-19"
+            },
+            {
+                "name": "Roscoe Huntington",
+                "gender": "Male",
+                "birthdate": "2019-11-05"
+            },
+            {
+                "name": "Alice Huntington",
+                "gender": "Female",
+                "birthdate": "2018-07-01"
+            },
+            {
+                "name": "Warren Huntington",
+                "gender": "Male",
+                "birthdate": "1990-07-04"
+            },
+            {
+                "name": "Sophia Huntington",
+                "gender": "Female",
+                "birthdate": "1993-07-02"
+            }
+        ]
+    }
+}
