@@ -1,0 +1,130 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Layout"
+                },
+                {
+                    "url": "https://karlarum.github.io/wdd230/lesson01/holygrail.html",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Princples Document"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/Screenshot.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "https://codepen.io/Karla-Rummler/pen/abrbEYZ",
+                    "title": "CSS Pseudo Elements"
+                },
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Karla-Rummler/pen/wvbKPxa?editors=0100",
+                    "title": "CSS Pseudo Classes"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
+                },
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "JS Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "Form-start/index.html",
+                    "title": "HTML Forms"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON file"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Fetch API"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "",
+                    "title": ""
+                },
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
+        }
+    ]
+}
