@@ -692,6 +692,7 @@ body.chamber-form main {
     grid-template-columns: 1fr;
     gap: 1rem;
     width: 100%;
+    text-align: center;
 }
 
 
