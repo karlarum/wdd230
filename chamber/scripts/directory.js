@@ -1,5 +1,5 @@
-const baseURL = "https://karlarum.github.io/wdd230/"
-const linksURL = "https://karlarum.github.io/wdd230/data/members.json"
+const baseURL = "https://karlarum.github.io/wdd230/chamber/index.html"
+const linksURL = "https://karlarum.github.io/wdd230/chamber/data/members.json"
 const display = document.querySelector("article");
 
 async function getLinks() {
