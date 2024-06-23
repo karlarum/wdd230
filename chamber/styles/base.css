@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -657,4 +658,80 @@ body.chamber-form main {
 #progressbar li.active:after {
     background: #27ae60;
     color: white;
+}
+
+/* Directory Page */
+
+.directory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.directoryMenu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#membersContainer {
+    display: none;
+}
+
+
+.directoryMenu button {
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+}
+
+
+.membersGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+
+.membersList {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.membersList section {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+
+.membersList section>* {
+    margin: 0 1rem;
+}
+
+
+.membersList section img {
+    display: none;
+}
+
+
+.membersList section:nth-child(even) {
+    background-color: #F1FAEE;
+}
+
+
+.directory section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.directory section img {
+    padding: 1rem;
 }

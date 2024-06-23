@@ -48,4 +48,14 @@
         margin-left: 100px;
         margin-right: 100px;
     }
+
+    /* Directory Page */
+
+    .membersGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .membersList section {
+        grid-template-columns: 1fr 1fr;
+    }
 }
