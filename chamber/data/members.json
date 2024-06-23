@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "The Manor at Bluewater Bay",
+            "address": "1500 N White Point Rd. Niceville, FL 32578",
+            "phone": "850-897-5592",
+            "website": "https://www.manoratbwb.com/",
+            "image": "images/the_manor_logo.webp",
+            "membership": "Bronze Membership",
+            "email": "wecare@manoratbwb.com"
+        },
+        {
+            "name": "White-Wilson Medical Center, P.A.",
+            "address": "2001 East Highway 20 Niceville, Florida 32578",
+            "phone": "850-897-4400",
+            "website": "https://white-wilson.com/index.html",
+            "image": "images/white-wilson-logo.webp",
+            "membership": "Gold Membership",
+            "email": "customerservice@white-wilson.com"
+        },
+        {
+            "name": "Publix",
+            "address": "1520 E John Sims Pkwy, Niceville, FL 32578",
+            "phone": "850-678-3002",
+            "website": "https://www.publix.com/locations/1461-the-crossing",
+            "image": "images/publix_logo.webp",
+            "membership": "Bronze Membership",
+            "email": "customerservice@publix.com"
+        },
+        {
+            "name": "Dermatology Specialists of Florida",
+            "address": "550 FL-85 STE A, Niceville, FL 32578",
+            "phone": "850-517-9041",
+            "website": "https://mydermspecialists.com/locations/florida/niceville/",
+            "image": "images/dermspec_logo.webp",
+            "membership": "Gold Membership",
+            "email": "contact@dermspecialists.com"
+        },
+        {
+            "name": "EOD Warrior Foundation",
+            "address": "716 Crestview Ave, Niceville, FL 32578",
+            "phone": "850-729-2336",
+            "website": "https://eodwarriorfoundation.org/",
+            "image": "images/eod-logo.webp",
+            "membership": "NP Membership",
+            "email": "info@eodwarriorfoundation.org"
+        },
+        {
+            "name": "Black Rifle Coffee Company",
+            "address": "510 W John Sims Pkwy #101, Niceville, FL 32578",
+            "phone": "850-353-2179",
+            "website": "https://www.blackriflecoffee.com/retail/niceville-florida",
+            "image": "images/black-rifle-logo.webp",
+            "membership": "Gold Membership",
+            "email": "customerservice@blackriflecoffee.com"
+        },
+        {
+            "name": "Cottonwood Company",
+            "address": "93 E John Sims Pkwy, Niceville, FL 32578",
+            "phone": "850-737-8883",
+            "website": "https://www.cottonwoodcompany.com/",
+            "image": "images/cottonwood-logo.webp",
+            "membership": "Silver Membership",
+            "email": "thecottonwoodcompany@gmail"
+        }
+    ]
+}
