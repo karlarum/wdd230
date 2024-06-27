@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementsByClassName("msform");
+    const form = document.getElementById("msform");
     const nextButtons = form.querySelectorAll(".next");
     const prevButtons = form.querySelectorAll(".previous");
     const fieldsets = form.querySelectorAll("fieldset");
