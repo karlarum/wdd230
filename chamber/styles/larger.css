@@ -105,7 +105,7 @@
     /* Membership Application Form */
 
     body.chamber-form main {
-        min-height: 69vh;
+        margin-top: -2rem;
     }
 
     main.chamber-form {
@@ -130,6 +130,10 @@
         margin-left: -290px;
         margin-right: -270px;
         margin-top: 5px;
+    }
+
+    .membership-level {
+        height: 230px;
     }
 
     /* Thank you page */
@@ -171,5 +175,4 @@
     .membersList section {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
 }

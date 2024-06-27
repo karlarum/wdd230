@@ -608,6 +608,14 @@ body.chamber-form main {
     margin-bottom: 20px;
 }
 
+.chamber-form p::before {
+    content: "• ";
+}
+
+.chamber-form p:nth-child(3)::before {
+    content: none;
+}
+
 /*progressbar*/
 #progressbar {
     margin-bottom: 30px;
@@ -722,6 +730,18 @@ body.chamber-form main {
 .membersList section:nth-child(even) {
     background-color: #F1FAEE;
 }
+
+
+.membership-level {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+    justify-items: center;
+    align-items: center;
+    height: 210px;
+}
+
+
 
 
 .directory section {
