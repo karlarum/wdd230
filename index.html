@@ -62,12 +62,17 @@
             <h3>Learning Activities</h3>
             <div id="linksContainer"></div>
         </section>
-        <section class="card">
+        <section class="infoCard">
             <h3>Information</h3>
             <ul>
                 <!-- Information placeholders about the weather, number of visits to the page, etc -->
                 <li><a>Location</a></li>
-                <li><a>Weather</a></li>
+                <li><a>
+                        <figure class="weather">
+                            <img id="weather-icon" src="" alt="">
+                            <figcaption></figcaption>
+                        </figure>
+                    </a></li>
                 <li><a><span class="label">Page Visits: <span class="visits"></span></span></a></li>
             </ul>
         </section>
@@ -88,6 +93,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/pagevisits.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
