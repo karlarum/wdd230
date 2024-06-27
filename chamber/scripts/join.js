@@ -62,4 +62,4 @@ form.addEventListener("submit", function (event) {
     const actionUrl = form.getAttribute("action") + "?" + formQueryString;
 
     window.location.href = actionUrl;
-})
+});
