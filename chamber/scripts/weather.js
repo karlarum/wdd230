@@ -3,7 +3,7 @@ const forecastIcon = document.querySelector('#forecast-icon');
 const captionDesc = document.querySelector('figcaption');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=30.481253&lon=-86.442100&units=imperial&appid=9a2fcfbaf1ae7d3e201a68db176df4cd';
-const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=30.481253lon=-86.442100&units=imperial&appid=9a2fcfbaf1ae7d3e201a68db176df4cd';
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=30.481253&lon=-86.442100&units=imperial&appid=9a2fcfbaf1ae7d3e201a68db176df4cd';
 
 // handle errors using a block function
 async function apiFetch() {
