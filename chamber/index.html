@@ -42,7 +42,6 @@
             <li><a href="discover.html">Discover</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="">Weather</a></li>
             <li><a href="">Spotlights</a></li>
         </ul>
     </nav>
@@ -74,9 +73,26 @@
         <section class="card">
             <h3>Weather</h3>
             <ul>
-                <li><a>Temperature: <span id="temperature">49&#176;F</span></a></li>
-                <li><a>Wind Speed: <span id="windspeed">11</span> mph</a></li>
-                <li><a>Wind Chill: <span id="windchill">N/A</span></a></li>
+                <li>
+                    <a>
+                        <figure class="weather">
+                            <img id="weather-icon" src="https://openweathermap.org/img/w/.png" alt="Weather Icon">
+                            <figcaption id="weather-desc"></figcaption>
+                        </figure>
+                        <figure class="forecast">
+                            <img id="forecast-icon1" src="https://openweathermap.org/img/w/.png" alt="Forecast Icon">
+                            <figcaption id="forecast-desc1"></figcaption>
+                        </figure>
+                        <figure class="forecast">
+                            <img id="forecast-icon2" src="https://openweathermap.org/img/w/.png" alt="Forecast Icon">
+                            <figcaption id="forecast-desc2"></figcaption>
+                        </figure>
+                        <figure class="forecast">
+                            <img id="forecast-icon3" src="https://openweathermap.org/img/w/.png" alt="Forecast Icon">
+                            <figcaption id="forecast-desc3"></figcaption>
+                        </figure>
+                    </a>
+                </li>
             </ul>
         </section>
         <section class="card">
@@ -126,7 +142,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/hero.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
