@@ -49,7 +49,7 @@ function displayForecast(data) {
         desc = desc.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
         document.getElementById(`forecast-icon${i + 1}`).setAttribute('src', iconsrc);
         document.getElementById(`forecast-icon${i + 1}`).setAttribute('alt', desc);
-        document.getElementById(`forecast-desc${i + 1}`).textContent = `${Math.round(forecast.main.temp)}&deg;F - ${desc}`;
+        document.getElementById(`forecast-desc${i + 1}`).textContent = `${Math.round(forecast.main.temp)}°F - ${desc}`;
     }
 }
 
