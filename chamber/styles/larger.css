@@ -27,6 +27,11 @@
         top: 1rem;
     }
 
+    .banner {
+        display: grid;
+        grid-column: 1/-1;
+    }
+
     main {
         padding: 1rem;
         margin: 0 auto;

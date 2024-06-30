@@ -158,6 +158,29 @@ nav.open ul {
     content: "❌";
 }
 
+.banner {
+    background-color: #ffb703;
+    padding: 10px;
+}
+
+.banner p {
+    margin: 0;
+    text-align: center;
+}
+
+.banner button {
+    background-color: #DDDBF1;
+    border-color: #DDDBF1;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.banner button:hover {
+    background-color: #b8b8ff;
+}
+
 main {
     padding: 1rem;
     margin: 0 auto;
@@ -226,7 +249,7 @@ main {
     margin: 10px 0;
     font-size: 0.8em;
     max-width: 100%;
-    text-align: left;
+    text-align: center;
 }
 
 #hero-button {
