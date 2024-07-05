@@ -31,13 +31,11 @@ async function apiFetch() {
 
 // display results
 function displayResults(data) {
-    // icon code and description
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     desc = desc.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    // display zero decimal points
     captionDesc.innerHTML = `${Math.round(data.main.temp)}&deg;F - ` + desc;
 }
 
@@ -49,7 +47,7 @@ function displayForecast(data) {
         desc = desc.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
         document.getElementById(`forecast-icon${i + 1}`).setAttribute('src', iconsrc);
         document.getElementById(`forecast-icon${i + 1}`).setAttribute('alt', desc);
-        document.getElementById(`forecast-desc${i + 1}`).textContent = `${Math.round(forecast.main.temp)}°F - ${desc}`;
+        document.getElementById(`forecast-desc${i + 1}`).innerHTML = `${Math.round(forecast.main.temp)}°F - ${desc}`;
     }
 }
 

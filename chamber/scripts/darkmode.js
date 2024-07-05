@@ -8,13 +8,15 @@ toggleButton.addEventListener("change", function () {
         main.style.background = "#000";
         main.style.color = "#fff";
         cards.forEach(function (card) {
-            card.style.background = "#eee";
-            card.style.color = "#000";
+            card.style.background = "#000";
+            card.style.color = "#eee";
             card.style.boxShadow = "5px 5px 10px black";
+            card.style.border = "1px solid white";
         });
-        infoBox.style.background = "#F1FAEE";
-        infoBox.style.color = "#000";
+        infoBox.style.background = "#000";
+        infoBox.style.color = "#eee";
         infoBox.style.boxShadow = "5px 5px 10px black";
+        infoBox.style.border = "1px solid white";
     } else {
         main.style.background = "#eee";
         main.style.color = "#000";

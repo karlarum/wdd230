@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -196,34 +195,23 @@ main {
     width: 100%;
 }
 
-/* temporary change for new hero image */
-/* .hero-image {
-    width: 100%;
-    max-height: 550px;
-    object-fit: cover;
-} */
-
 .hero {
-    background-image: url("images/hero-large.webp");
+    background-image: url("images/large-rockybayou.webp");
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
 }
 
-/* CSS for temporary hero image */
 .hero img {
     width: 100%;
-    height: auto;
     object-fit: cover;
 }
 
 .text {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    /* temporary change for new hero image */
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -238,7 +226,6 @@ main {
 
 .text h2 {
     margin: 0;
-    font-size: 1.2em;
     padding: 10px;
     background-color: transparent;
     color: white;
@@ -252,23 +239,24 @@ main {
     text-align: center;
 }
 
+h2 {
+    font-family: "Playfair Display";
+}
+
 #hero-button {
     padding: 10px 20px;
     font-size: 1em;
+    text-align: center;
     background-color: #F1FAEE;
     color: black;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 #hero-button:hover {
     background-color: #A8DADC;
-}
-
-h1 {
-    text-align: center;
-    color: black;
 }
 
 .welcome-message {
@@ -279,6 +267,7 @@ h1 {
     text-align: center;
 }
 
+/* Add a line under welcome message */
 .welcome-message::after {
     content: "";
     display: block;
@@ -293,10 +282,11 @@ h1 {
 .welcome-message h2 {
     padding-bottom: 10px;
     text-align: center;
+    font-size: 2.5rem;
 }
 
 .card {
-    margin: 0;
+    margin: 0px;
     background: white;
     color: black;
     border-radius: 5px;
@@ -315,33 +305,33 @@ h1 {
     padding: 1rem;
 }
 
+.card p {
+    text-align: center;
+}
+
 .card ul {
     list-style-type: none;
     line-height: 1.8;
-    padding: 1rem;
+    margin: 10px;
 }
 
-.weather p {
-    text-align: center;
-    font-weight: bold;
+#featureLink {
+    text-decoration: none;
+    color: black;
 }
 
+#featureLink:hover {
+    color: #4bd863;
+}
+
+.card ul li a figure figcaption {
+    display: inline-block;
+    vertical-align: 1em;
+}
+
+.weather p,
 #forecast p {
-    text-align: center;
     font-weight: bold;
-}
-
-iframe {
-    width: 100%;
-    height: 400px;
-    border: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-}
-
-.map {
-    grid-column: 1/-1;
 }
 
 #member-box {
@@ -352,6 +342,10 @@ iframe {
     padding: 50px;
 }
 
+#member-box h2 {
+    font-size: 2em;
+}
+
 #member-box p {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -360,11 +354,13 @@ iframe {
 #member {
     padding: 10px 20px;
     font-size: 1em;
+    text-decoration: none;
     background-color: #F1FAEE;
     color: black;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    display: inline-block;
 }
 
 #member:hover {
@@ -381,6 +377,19 @@ iframe {
 
 .info-box h2 {
     padding-bottom: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.map {
+    grid-column: 1/-1;
 }
 
 /* footer */
