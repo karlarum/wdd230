@@ -1,4 +1,3 @@
-// const baseURL = "https://karlarum.github.io/wdd230/chamber/index.html"
 const linksURL = "https://karlarum.github.io/wdd230/chamber/data/members.json";
 const display = document.querySelector("article");
 

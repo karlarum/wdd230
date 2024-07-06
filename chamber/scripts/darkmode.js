@@ -9,7 +9,7 @@ toggleButton.addEventListener("change", function () {
         main.style.color = "#fff";
         cards.forEach(function (card) {
             card.style.background = "#000";
-            card.style.color = "#eee";
+            card.style.color = "white";
             card.style.boxShadow = "5px 5px 10px black";
             card.style.border = "1px solid white";
         });
@@ -18,15 +18,17 @@ toggleButton.addEventListener("change", function () {
         infoBox.style.boxShadow = "5px 5px 10px black";
         infoBox.style.border = "1px solid white";
     } else {
-        main.style.background = "#eee";
+        main.style.background = "white";
         main.style.color = "#000";
         cards.forEach(function (card) {
-            card.style.background = "#eee";
+            card.style.background = "white";
             card.style.color = "#000";
             card.style.boxShadow = "5px 5px 10px grey";
+            card.style.border = "none";
         });
         infoBox.style.background = "#F1FAEE";
         infoBox.style.color = "#000";
         infoBox.style.boxShadow = "5px 5px 10px grey";
+        infoBox.style.border = "none";
     }
 })

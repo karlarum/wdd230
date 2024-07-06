@@ -73,12 +73,12 @@
 
     .info-box {
         grid-column: 1;
-        padding: 100px;
         background-color: #F1FAEE;
+        line-height: 2em;
     }
 
-    .info-box p {
-        padding-top: 10px;
+    .info-box h2 {
+        padding-top: 65px;
     }
 
     .map {
