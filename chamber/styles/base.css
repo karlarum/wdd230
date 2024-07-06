@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
     margin: 0;
@@ -207,7 +207,6 @@ main {
 
 .hero img {
     width: 100%;
-    /* height: auto; */
     object-fit: cover;
 }
 
@@ -423,30 +422,11 @@ footer {
     margin: 0;
 }
 
-.sidebar ul {
-    list-style: none;
-}
-
-.sidebar-card {
-    border-radius: 7px;
-    border: 1px solid black;
-    margin: 10px;
-}
-
-.sidebar-card h2 {
-    text-align: center;
-    background-color: #25283D;
-    color: white;
-    border-radius: 5px 5px 0 0;
-    padding: 1rem;
-}
-
-.sidebar-card h3 {
-    padding: 10px;
-    text-align: center;
-    color: black;
-    padding-top: 30px;
-    font-size: 1.5em;
+#pagevisits,
+#metrics,
+#events,
+#attractions {
+    margin-top: 10px;
 }
 
 .visits-container {
@@ -455,7 +435,6 @@ footer {
 }
 
 #metrics {
-    color: black;
     padding-bottom: 10px;
 }
 
@@ -466,8 +445,6 @@ footer {
 .number {
     font-size: 2em;
     font-weight: bold;
-    padding: 10px;
-    margin-top: 10px;
 }
 
 .description {
@@ -485,7 +462,6 @@ footer {
 
 #events ul {
     padding: 10px;
-    line-height: 1.5em;
 }
 
 #attractions a {
@@ -494,12 +470,14 @@ footer {
 }
 
 #attractions a:hover {
-    color: #0008ff;
+    color: #001eff;
+}
+
+#attractions ul li.website:nth-of-type(even)>a:hover {
+    color: #00f552;
 }
 
 #attractions .website {
-    margin-bottom: 20px;
-    margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px 20px;
@@ -512,10 +490,6 @@ footer {
 #attractions .website:nth-child(even) {
     background-color: #4f5055;
     color: white;
-}
-
-#attractions .location {
-    margin-top: 20px;
 }
 
 #attractions .location::before {
@@ -775,8 +749,7 @@ body.chamber-form main {
     height: 210px;
 }
 
-
-
+/* Directory Page */
 
 .directory section {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -785,7 +758,6 @@ body.chamber-form main {
     justify-items: center;
     align-items: center;
 }
-
 
 .directory section img {
     padding: 1rem;
