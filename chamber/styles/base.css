@@ -196,7 +196,6 @@ main {
 }
 
 .hero {
-    background-image: url("images/large-rockybayou.webp");
     background-size: cover;
     background-position: center;
     width: 100%;
