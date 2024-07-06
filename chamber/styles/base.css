@@ -146,7 +146,8 @@ nav.open ul {
 
 #menu {
     display: block;
-    height: 30px;
+    background-color: #A8DADC;
+    height: 50px;
 }
 
 #menu::before {
