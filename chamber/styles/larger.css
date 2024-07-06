@@ -40,6 +40,11 @@
         gap: 20px;
     }
 
+    .hero img {
+        height: auto;
+    }
+
+
     #hero-button {
         font-size: 1.5rem;
         border: 0;

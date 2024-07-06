@@ -207,6 +207,7 @@ main {
 
 .hero img {
     width: 100%;
+    /* height: auto; */
     object-fit: cover;
 }
 
@@ -231,7 +232,7 @@ main {
     padding: 10px;
     background-color: transparent;
     color: white;
-    text-align: start;
+    text-align: center;
 }
 
 .text p {
