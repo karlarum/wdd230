@@ -1,7 +1,12 @@
 const toggleButton = document.querySelector(".check");
 const main = document.querySelector("main");
-const cards = document.querySelectorAll(".card");
+const pageVisitsCard = document.querySelector("#pagevisits");
+const metricsCard = document.querySelector("#metrics");
+const eventsCard = document.querySelector("#events");
+const attractionsCard = document.querySelector("#attractions");
 const infoBox = document.querySelector(".info-box");
+
+const cards = [pageVisitsCard, metricsCard, eventsCard, attractionsCard];
 
 toggleButton.addEventListener("change", function () {
     if (toggleButton.checked) {

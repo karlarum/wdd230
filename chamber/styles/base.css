@@ -419,35 +419,22 @@ footer {
 .discover-grid {
     display: flex;
     flex-wrap: wrap;
+    grid-template-columns: 1fr;
     width: 100%;
     margin: 0;
 }
 
-.sidebar {
-    flex: 1;
-    max-width: 100%;
-    padding: 1em;
-}
-
-#metrics ul,
-#events ul,
-#attractions ul {
+.sidebar ul {
     list-style: none;
 }
 
-#pagevisits,
-#metrics,
-#events,
-#attractions {
+.sidebar-card {
     border-radius: 7px;
     border: 1px solid black;
     margin: 10px;
 }
 
-#pagevisits h2,
-#metrics h2,
-#events h2,
-#attractions h2 {
+.sidebar-card h2 {
     text-align: center;
     background-color: #25283D;
     color: white;
@@ -455,8 +442,7 @@ footer {
     padding: 1rem;
 }
 
-#metrics h3,
-#events h3 {
+.sidebar-card h3 {
     padding: 10px;
     text-align: center;
     color: black;
@@ -464,15 +450,18 @@ footer {
     font-size: 1.5em;
 }
 
-#pagevisits li {
-    list-style-type: none;
+.visits-container {
     text-align: center;
     padding: 50px;
 }
 
 #metrics {
-    color: white;
+    color: black;
     padding-bottom: 10px;
+}
+
+#metrics li {
+    margin: 10px;
 }
 
 .number {
@@ -490,12 +479,9 @@ footer {
 .number,
 .description {
     display: block;
-    background-color: #006100;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin-left: 110px;
+    background-color: #006100;
+    color: white;
 }
 
 #events ul {
@@ -525,7 +511,8 @@ footer {
 }
 
 #attractions .website:nth-child(even) {
-    background-color: #F1FAEE;
+    background-color: #4f5055;
+    color: white;
 }
 
 #attractions .location {
@@ -549,14 +536,8 @@ footer {
 }
 
 .maincontent img {
-    width: 100%;
+    width: auto;
     height: auto;
-}
-
-.discover-grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
 }
 
 .caption {

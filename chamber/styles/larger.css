@@ -33,17 +33,12 @@
     }
 
     main {
-        padding: 1rem;
-        margin: 0 auto;
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
     }
 
     .hero img {
         height: auto;
     }
-
 
     #hero-button {
         font-size: 1.5rem;
@@ -99,9 +94,13 @@
 
     /* DISCOVER PAGE */
 
-    .sidebar {
-        max-width: 500px;
-        margin-left: 165px;
+    .discover-grid {
+        gap: 0;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .maincontent {
+        margin: 0;
     }
 
     .maincontent img {
@@ -155,7 +154,6 @@
     }
 
     main.thanks h1 {
-        text-align: center;
         margin-top: 50px;
     }
 
