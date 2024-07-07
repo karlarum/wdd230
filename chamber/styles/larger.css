@@ -131,6 +131,7 @@
     .directory {
         width: 100%;
         height: auto;
+        padding-bottom: 30px;
     }
 
     .membersGrid {
@@ -139,5 +140,6 @@
 
     .membersList section {
         grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px;
     }
 }
