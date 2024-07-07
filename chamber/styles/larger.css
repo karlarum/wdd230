@@ -113,36 +113,18 @@
 
     /* Membership Application Form */
 
-    body.chamber-form main {
-        margin-top: -2rem;
-    }
-
     main.chamber-form {
-        grid-gap: 0px;
-    }
-
-    .benefits-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        width: 800px;
-        align-items: center;
-        margin: 100px;
+        grid-template-columns: 1fr 2fr;
     }
 
     #msform {
-        width: 800px;
-        grid-column: 3/3;
+        grid-column: 2/4;
+        width: 80%;
     }
 
     .radio-container input[type="radio"] {
-        margin-left: -290px;
-        margin-right: -270px;
-        margin-top: 5px;
-    }
-
-    .membership-level {
-        height: 230px;
+        margin-left: -200px;
+        margin-right: -300px;
     }
 
     /* Thank you page */

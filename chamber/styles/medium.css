@@ -19,22 +19,20 @@
 
     #msform {
         width: 100%;
-        margin: 50px auto;
     }
 
     #msform fieldset {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
-    }
-
-    .radio-container input[type="radio"] {
-        margin-left: -150px;
-        margin-right: -150px;
-        margin-top: 5px;
     }
 
     .membership-level {
         height: 200px;
+    }
+
+    .radio-container input[type="radio"] {
+        margin-left: -200px;
+        margin-right: -200px;
     }
 
     /* Thank you page */
