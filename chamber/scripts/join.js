@@ -53,12 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     // Form submission
     form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        const formData = new FormData(form);
-        const formQueryString = new URLSearchParams(formData).toString();
-        const actionUrl = form.getAttribute("action") + "?" + formQueryString;
-
-        window.location.href = actionUrl;
+        form.setAttribute("action", "thankyou.html");
     });
 });
