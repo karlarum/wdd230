@@ -122,11 +122,6 @@
         width: 80%;
     }
 
-    .radio-container input[type="radio"] {
-        margin-left: -200px;
-        margin-right: -300px;
-    }
-
     /* Directory Page */
 
     #directory-body {
