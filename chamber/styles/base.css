@@ -411,6 +411,7 @@ footer {
     text-align: center;
     grid-column: 1 / 3;
     color: #daf7dc;
+    align-self: end;
 }
 
 /* DISCOVER PAGE */
@@ -693,6 +694,25 @@ footer {
 #progressbar li.active:after {
     background: #27ae60;
     color: white;
+}
+
+/* Thank you page */
+
+.thanks {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.thanks h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.thanks p {
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 30px;
 }
 
 /* Directory Page */

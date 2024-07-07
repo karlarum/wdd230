@@ -35,31 +35,10 @@
         margin-right: -200px;
     }
 
-    /* Thank you page */
+    /* Thank You Page */
 
-    main.thanks {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    main.thanks h1 {
-        text-align: center;
-        margin-top: 50px;
-    }
-
-    main.thanks p {
-        text-align: center;
-        font-size: 1.2em;
-    }
-
-    main.thanks p:nth-child(2) {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-
-    main.thanks p:nth-child(3) {
-        margin-left: 100px;
-        margin-right: 100px;
+    .thanks {
+        width: 50%;
     }
 
     /* Directory Page */
