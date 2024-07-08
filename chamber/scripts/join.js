@@ -1,3 +1,63 @@
+// document.addEventListener("DOMContentLoaded", function () {
+//     const form = document.getElementById("msform");
+//     const nextButtons = form.querySelectorAll(".next");
+//     const prevButtons = form.querySelectorAll(".previous");
+//     const fieldsets = form.querySelectorAll("fieldset");
+//     const progressList = document.getElementById("progressbar").querySelectorAll("li");
+//     let currentStep = 0;
+
+//     // Show the current fieldset
+//     function showStep(step) {
+//         fieldsets.forEach(function (fieldset, index) {
+//             if (index === step) {
+//                 fieldset.style.display = "block";
+//             } else {
+//                 fieldset.style.display = "none";
+//             }
+//         });
+
+//         updateProgress(step);
+//     }
+
+//     // Update progress bar / step indicator
+//     function updateProgress(step) {
+//         progressList.forEach(function (progressItem, index) {
+//             if (index <= step) {
+//                 progressItem.classList.add("active");
+//             } else {
+//                 progressItem.classList.remove("active");
+//             }
+//         });
+//     }
+
+//     showStep(currentStep);
+
+//     // Next button
+//     nextButtons.forEach(function (button, index) {
+//         button.addEventListener("click", function () {
+//             if (currentStep < fieldsets.length - 1) {
+//                 currentStep++;
+//                 showStep(currentStep);
+//             }
+//         });
+//     });
+
+//     // Previous button
+//     prevButtons.forEach(function (button, index) {
+//         button.addEventListener("click", function () {
+//             if (currentStep > 0) {
+//                 currentStep--;
+//                 showStep(currentStep);
+//             }
+//         });
+//     });
+//     // Form submission
+//     form.addEventListener("submit", function (event) {
+//         form.setAttribute("action", "thankyou.html");
+//         form.submit();
+//     });
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("msform");
     const nextButtons = form.querySelectorAll(".next");
@@ -9,11 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show the current fieldset
     function showStep(step) {
         fieldsets.forEach(function (fieldset, index) {
-            if (index === step) {
-                fieldset.style.display = "block";
-            } else {
-                fieldset.style.display = "none";
-            }
+            fieldset.style.display = (index === step) ? "block" : "none";
         });
 
         updateProgress(step);
@@ -21,19 +77,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Update progress bar / step indicator
     function updateProgress(step) {
-        progressList.forEach(function (progressItem, index) {
-            if (index <= step) {
-                progressItem.classList.add("active");
-            } else {
-                progressItem.classList.remove("active");
-            }
+        progressList.forEach(function (li, index) {
+            li.classList.toggle("active", index <= step);
         });
     }
 
-    showStep(currentStep);
-
-    // Next button
-    nextButtons.forEach(function (button, index) {
+    // Handle next button click
+    nextButtons.forEach(function (button) {
         button.addEventListener("click", function () {
             if (currentStep < fieldsets.length - 1) {
                 currentStep++;
@@ -42,8 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Previous button
-    prevButtons.forEach(function (button, index) {
+    // Handle previous button click
+    prevButtons.forEach(function (button) {
         button.addEventListener("click", function () {
             if (currentStep > 0) {
                 currentStep--;
@@ -51,9 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-    // Form submission
-    form.addEventListener("submit", function (event) {
-        form.setAttribute("action", "thankyou.html");
-        form.submit();
-    });
+
+    showStep(currentStep);
 });
