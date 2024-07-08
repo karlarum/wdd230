@@ -54,5 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Form submission
     form.addEventListener("submit", function (event) {
         form.setAttribute("action", "thankyou.html");
+        form.submit();
     });
 });
