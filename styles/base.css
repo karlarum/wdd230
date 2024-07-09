@@ -150,44 +150,50 @@ h2 {
     padding: 1rem;
 }
 
-.card h4 {
-    padding: 1rem;
-    line-height: normal;
-}
-
 .card ul {
     list-style-type: none;
 }
 
-.card ul li {
-    display: inline;
-    padding-right: 5px;
-    padding-top: 1rem;
-}
-
-/* info card */
-.infoCard {
-    background: white;
-    color: black;
-    border-radius: 5px;
-    border: 5px transparent;
-    box-shadow: 5px 5px 10px grey;
-    width: 100%;
-    padding-block-end: 10px;
-}
-
-.infoCard h3 {
+#infoCard {
     text-align: center;
-    background-color: #86bbd8;
-    color: black;
-    border-radius: 5px 5px 0 0;
-    padding: 1rem;
-    margin: 0;
 }
 
-.infoCard ul {
-    list-style-type: none;
-    margin-left: -1.5rem;
+h4 {
+    padding-left: 20px;
+}
+
+h4,
+ul,
+li {
+    display: inline;
+}
+
+#info ul {
+    padding: 10px;
+}
+
+#linksContainer,
+#infoContainer {
+    padding: 10px;
+}
+
+/* location */
+.infoCard:nth-of-type(2) li:nth-child(1)::before {
+    content: "📍";
+}
+
+/* page visits */
+.infoCard:nth-of-type(2) li:nth-child(3)::before {
+    content: "📈";
+}
+
+.weather figcaption {
+    display: inline;
+    vertical-align: 1em;
+}
+
+#weather-icon {
+    margin-left: -3em;
 }
 
 iframe {
@@ -209,26 +215,4 @@ footer {
     text-align: center;
     grid-column: 1 / 3;
     color: #daf7dc;
-}
-
-/* location */
-.infoCard:nth-of-type(2) li:nth-child(1)::before {
-    content: "📍";
-}
-
-/* page visits */
-.infoCard:nth-of-type(2) li:nth-child(3)::before {
-    content: "📈";
-}
-
-/* weather */
-
-.weather figcaption {
-    display: inline;
-}
-
-#weather-icon {
-    vertical-align: -1em;
-    height: auto;
-    margin-left: -3rem;
 }
