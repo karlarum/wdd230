@@ -12,7 +12,6 @@ body {
     padding: 0;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
-    margin: 0;
     box-sizing: border-box;
 }
 
@@ -85,6 +84,10 @@ nav.open ul {
 
 /* hero image and cards */
 
+.hero img {
+    width: 100%;
+}
+
 .card {
     border-radius: 5px;
     border: 5px transparent;
@@ -156,6 +159,9 @@ nav.open ul {
     grid-row: 2/3;
     margin: 0;
 }
+
+/* summary */
+
 
 /* footer */
 
