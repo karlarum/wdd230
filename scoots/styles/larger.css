@@ -1,0 +1,22 @@
+@media screen and (min-width: 60em) {
+
+    /* navigation */
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: #25283D;
+    }
+
+    #menu {
+        display: none;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+}
