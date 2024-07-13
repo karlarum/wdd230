@@ -5,7 +5,6 @@
     nav ul {
         display: flex;
         justify-content: space-around;
-        background-color: #25283D;
     }
 
     #menu {
@@ -19,14 +18,39 @@
         top: 1rem;
     }
 
+    /* hero image and cards */
+
+    .hero-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* call to action */
+
+    .actionCall {
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .actionCall h3 {
+        padding: 20px;
+    }
+
+    .actionCall img {
+        margin-top: 0;
+        padding: 10px;
+        background-color: white;
+    }
+
     /* summary */
 
     .summary {
         display: flex;
         flex-direction: row;
-        text-align: center;
-        font-weight: bold;
-        justify-content: space-around;
-        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
     }
+
 }

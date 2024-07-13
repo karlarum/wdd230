@@ -1,1 +1,25 @@
-@media screen and (min-width: 37.5em) {}
+@media screen and (min-width: 37.5em) {
+
+    /* hero image and cards */
+
+    .hero-card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .actionCall {
+        margin: 10px;
+    }
+
+    /* summary */
+
+    .summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .weather {
+        margin: 10px;
+    }
+}
