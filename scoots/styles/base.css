@@ -250,3 +250,75 @@ footer .socials a {
     margin: 0 0.5rem;
     font-size: 1.5rem;
 }
+
+/* CONTACT PAGE */
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact {
+    background: #F3E8EE;
+    padding: 25px;
+    margin: 50px 0;
+}
+
+#contact h2 {
+    color: black;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#contact h3 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #192F39;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button:hover {
+    background: #00e8fc;
+    color: black;
+}
