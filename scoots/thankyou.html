@@ -4,17 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots Rental Website</title>
-    <!-- example DESCRIPTION: A chamber of commerce website for the city of Niceville, Florida. -->
-    <meta name="description" content="A rental website for Scoots Rental's in Cozumel, Mexico">
+    <title>Thank You Page for Scoots Rental Company Website</title>
+    <meta name="description" content="A thank you page for the Scoots Rental Company website">
     <meta name="author" content="Karla Rummler">
-    <!-- example OG TITLE: Niceville Chamber of Commerce -->
-    <meta property="og:title" content="Scoots Rentals">
+    <meta property="og:title" content="Scoots Rental Company Thank You Pge">
     <meta property="og:type" content="website">
-    <!-- CHANGE IMAGE BEFORE TURNING IN -->
-    <meta property="og:image" content="http://via.placeholder.com/100x100">
-    <!-- example OG URL: https://karlarum.github.io/wdd230/scoots/index.html -->
+    <meta property="og:image"
+        content="https://unsplash.com/photos/a-group-of-palm-trees-blowing-in-the-wind-rYYc5F5iCg8">
     <meta property="og:url" content="https://karlarum.github.io/wdd230/scoots/index.html">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -23,48 +21,75 @@
 </head>
 
 <body>
-
     <header>
         <h1>Scoots</h1>
+        <div class="menu">
+            <button id="menu"></button>
+        </div>
     </header>
-
-    <button id="menu"></button>
 
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
             <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
-    <main>
-        <h2>THANK YOU</h2>
-        <P>We will contact you within 24 hours!</P>
+    <main class="thankyou">
+        <section class="thankyou-box">
+            <h2>THANK YOU</h2>
+            <p>We appreciate you getting in touch with Scoots Rental Company. One of our representatives will contact
+                you within the next 24 hours to assist you with your query. In the meantime, feel free to explore our
+                rental options and prepare for an exciting adventure in Cozumel!</p>
+            <p>For immediate assistance, please call us at +52 987 654 3210</p>
+        </section>
+        <section class="thankyou-cards">
+            <section class="thankyou-card1">
+                <picture>
+                    <source srcset="images/wrangler-large.webp" media="(min-width: 400px)">
+                    <source srcset="images/wrangler-small.webp" media="(min-width: 225px)">
+                    <img src="images/wrangler-large.webp" alt="wrangler" loading="lazy">
+                </picture>
+            </section>
+            <section class="thankyou-card2">
+                <picture>
+                    <source srcset="images/scooter-large.webp" media="(min-width: 400px)">
+                    <source srcset="images/scooter-small.webp" media="(min-width: 225px)">
+                    <img src="images/scooter-large.webp" alt="honda scooter" loading="lazy">
+                </picture>
+            </section>
+            <section class="thankyou-card3">
+                <picture>
+                    <source srcset="images/atv-large.webp" media="(min-width: 400px)">
+                    <source srcset="images/atv-small.webp" media="(min-width: 225px)">
+                    <img src="images/atv-large.webp" alt="honda atv" loading="lazy">
+                </picture>
+            </section>
+        </section>
     </main>
 
     <footer>
         <p>Scoots © 2024</p>
         <div class="socials">
             <a href="https://www.facebook.com/">
-                <img src="images/facebook.webp" alt="facebook logo">
+                <img src="images/facebook.webp" alt="facebook logo" loading="lazy">
             </a>
             <a href="https://www.instagram.com/">
-                <img src="images/instagram.webp" alt="instagram logo">
+                <img src="images/instagram.webp" alt="instagram logo" loading="lazy">
             </a>
             <a href="https://x.com/?lang=en">
-                <img src="images/x.webp" alt="x logo">
+                <img src="images/x.webp" alt="x logo" loading="lazy">
             </a>
             <a href="https://www.tiktok.com/explore">
-                <img src="images/tiktok.webp" alt="tiktok logo">
+                <img src="images/tiktok.webp" alt="tiktok logo" loading="lazy">
             </a>
         </div>
     </footer>
 
-    <script src="scripts/banner.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/weather.js"></script>
+
 
 </body>
 

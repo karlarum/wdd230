@@ -374,3 +374,49 @@ input[type="submit"]:hover {
     font-weight: 400;
     padding: 20px 0;
 }
+
+/* thank you page */
+
+.thankyou {
+    background-color: #A9B3A3;
+    text-align: center;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.thankyou-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.thankyou h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding: 50px;
+}
+
+.thankyou p {
+    padding: 10px;
+    width: 100%;
+}
+
+.thankyou-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.thankyou-card1,
+.thankyou-card2,
+.thankyou-card3 {
+    border-radius: 5px;
+    border: 5px transparent;
+    box-shadow: 5px 5px 10px grey;
+    background-color: white;
+    padding: 10px;
+    gap: 20px;
+}
