@@ -58,6 +58,8 @@
         box-sizing: border-box;
     }
 
+    /* weather */
+
     .weather-contact {
         display: flex;
         justify-content: space-around;
@@ -68,4 +70,20 @@
         font-weight: bold;
         margin-top: 10px;
     }
+
+    /* contact page */
+
+    .flex-container {
+        flex-direction: row;
+    }
+
+    .map,
+    .container {
+        max-width: 50%;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
 }
