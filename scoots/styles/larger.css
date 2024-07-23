@@ -2,6 +2,11 @@
 
     /* navigation */
 
+    header h1 {
+        position: relative;
+        margin-bottom: 0;
+    }
+
     nav ul {
         display: flex;
         justify-content: space-around;
@@ -53,4 +58,14 @@
         box-sizing: border-box;
     }
 
+    .weather-contact {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .weather p {
+        font-weight: bold;
+        margin-top: 10px;
+    }
 }

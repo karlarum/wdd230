@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoots Rental Website</title>
-    <!-- example DESCRIPTION: A chamber of commerce website for the city of Niceville, Florida. -->
-    <meta name="description" content="A rental website for Scoots Rental's in Cozumel, Mexico">
+    <meta name="description" content="A rental website for Scoots Rental Company in Cozumel, Mexico">
     <meta name="author" content="Karla Rummler">
-    <!-- example OG TITLE: Niceville Chamber of Commerce -->
-    <meta property="og:title" content="Scoots Rentals">
+    <meta property="og:title" content="Scoots Rental Company">
     <meta property="og:type" content="website">
-    <!-- CHANGE IMAGE BEFORE TURNING IN -->
-    <meta property="og:image" content="http://via.placeholder.com/100x100">
-    <!-- example OG URL: https://karlarum.github.io/wdd230/scoots/index.html -->
+    <meta property="og:image"
+        content="https://unsplash.com/photos/a-group-of-palm-trees-blowing-in-the-wind-rYYc5F5iCg8">
     <meta property="og:url" content="https://karlarum.github.io/wdd230/scoots/index.html">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -23,13 +21,12 @@
 </head>
 
 <body>
-
-    <!-- <section class="headerGrid"> -->
     <header>
         <h1>Scoots</h1>
+        <div class="menu">
+            <button id="menu"></button>
+        </div>
     </header>
-
-    <button id="menu"></button>
 
     <nav>
         <ul>
@@ -39,7 +36,6 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
-    <!-- </section> -->
 
     <main class="home-grid">
         <section class="banner">
@@ -48,76 +44,148 @@
         <section id="hero-box">
             <div class="hero">
                 <picture>
-                    <!-- <source srcset="" media="">
-                    <source srcset="" media=""> -->
-                    <img src="images/cozumel_panorama.jpg" alt="placeholder image">
+                    <source srcset="images/cozumel-hero-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/cozumel-hero-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/cozumel-hero-large.webp" alt="placeholder image" loading="lazy">
                 </picture>
             </div>
             <section class="hero-card">
                 <section class="card" id="card1">
                     <h2><a href="rentals.html">Jeep</a></h2>
-                    <img src="images/jeep-wrangler-hero.jpg" alt="jeep wrangler">
+                    <picture>
+                        <source srcset="images/wrangler-small.webp" media="(min-width: 225px)">
+                        <source srcset="images/wrangler-medium.webp" media="(max-width: 300px)">
+                        <img src="images/wrangler-large.webp" alt="jeep wrangler" loading="lazy">
+                    </picture>
                 </section>
                 <section class="card" id="card2">
-                    <h2><a href="rentals.html">Honda</a></h2>
-                    <img src="images/honda-scooter-hero.jpg" alt="honda scooter">
+                    <h2><a href="rentals.html">Scooter</a></h2>
+                    <picture>
+                        <source srcset="images/scooter-small.webp" media="(min-width: 225px)">
+                        <source srcset="images/scooter-medium.webp" media="(max-width: 300px)">
+                        <img src="images/scooter-large.webp" alt="honda scooter" loading="lazy">
+                    </picture>
                 </section>
                 <section class="card" id="card3">
-                    <h2><a href="rentals.html">Honda ATV</a></h2>
-                    <img src="images/honda-atv-new.jpg" alt="honda atv">
+                    <h2><a href="rentals.html">ATV</a></h2>
+                    <picture>
+                        <source srcset="images/atv-small.webp" media="(min-width: 225px)">
+                        <source srcset="images/atv-medium.webp" media="(max-width: 300px)">
+                        <img src="images/atv-large.webp" alt="honda atv" loading="lazy">
+                    </picture>
                 </section>
             </section>
+        </section>
+        <section class="welcome">
+            <h2>Welcome to Cozumel!</h2>
+            <p>Scoots is your go-to for motor scooter rentals on our beautiful island. Whether you're a local or a
+                tourist, we offer friendly rentals of Honda scooters, Jeeps, and ATVs.</p>
+            <p>Visit us near the Playa del Carmen-Cozumel Ferry dock or Terminal Puerta Maya, and explore Cozumel's
+                stunning coasts and hidden inlets. Reserve your ride today and embrace the carefree spirit of the
+                island!</p>
         </section>
         <section class="actionCall">
             <div class="actionText">
                 <h3>Start Your Adventure!</h3>
                 <a href="reservations.html">BOOK NOW</a>
             </div>
-            <img src="images/action-image-new.jpg" alt="action image">
+            <picture>
+                <source srcset="images/action-call-small.webp" media="(max-width: 300px)">
+                <source srcset="images/action-call-medium.webp" media="(min-width: 350px)">
+                <img src="images/action-call.webp" alt="action image" loading="lazy">
+            </picture>
         </section>
         <section class="summary">
             <section>
-                <img src="images/delivery.png" alt="delivery icon">
+                <picture>
+                    <source srcset="images/delivery-small.webp" media="(max-width: 200px)">
+                    <source srcset="images/delivery-medium.webp" media="(max-width: 225px)">
+                    <img src="images/delivery.webp" alt="delivery icon" loading="lazy">
+                </picture>
                 <p>Free Delivery</p>
             </section>
             <section>
-                <img src="images/walk-in.png" alt="walk in icon">
+                <picture>
+                    <source srcset="images/walk-in-small.webp" media="(max-width: 200px)">
+                    <source srcset="images/walk-in-medium.webp" media="(max-width: 225px)">
+                    <img src="images/walk-in.webp" alt="walk in icon" loading="lazy">
+                </picture>
                 <p>Walk-ins Welcome</p>
             </section>
             <section>
-                <img src="images/age-requirement.png" alt="age requirement icon">
+                <picture>
+                    <source srcset="images/age-requirement.webp" media="(max-width: 200px)">
+                    <source srcset="images/age-requirement.webp" media="(max-width: 225px)">
+                    <img src="images/age-requirement.webp" alt="age requirement icon" loading="lazy">
+                </picture>
                 <p>Ages 12+</p>
             </section>
             <section>
-                <img src="images/unlimited-miles.png" alt="unlimited miles icon">
-                <p>Unlimited Miles</p>
+                <picture>
+                    <source srcset="images/unlimited-miles.webp" media="(max-width: 200px)">
+                    <source srcset="images/unlimited-miles.webp" media="(max-width: 225px)">
+                    <img src="images/unlimited-miles.webp" alt="unlimited miles icon" loading="lazy">
+                </picture>
             </section>
             <section>
-                <img src="images/apple-pay.png" alt="apple pay icon">
+                <picture>
+                    <source srcset="images/apple-pay.webp" media="(max-width: 200px)">
+                    <source srcset="images/apple-pay.webp" media="(max-width: 225px)">
+                    <img src="images/apple-pay.webp" alt="apple pay icon" loading="lazy">
+                </picture>
                 <p>Apple Pay Accepted</p>
             </section>
         </section>
-        <section class="weather">
-            <h3>Weather</h3>
-            <ul>
-                <li>
-                    <a>
-                        <figure class="weather">
-                            <p>Today</p>
-                            <img id="weather-icon" src="https://openweathermap.org/img/w/.png" alt="Weather Icon">
-                            <figcaption id="weather-desc"></figcaption>
-                        </figure>
-                        <div id="humidity"></div>
-                        <div id="forecast">
-                            <p>Tomorrow</p>
-                            <figure>
-                                <img id="forecast-icon" src="https://openweathermap.org/img/w/.png" alt="Forecast Icon">
-                                <figcaption id="forecast-desc"></figcaption>
-                            </figure>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+        <section class="weather-contact">
+            <div class="weather">
+                <h3>Weather</h3>
+                <ul>
+                    <li>
+                        <a>
+                            <div id="weather1">
+                                <figure class="weather">
+                                    <h3>Today</h3>
+                                    <img id="weather-icon" src="https://openweathermap.org/img/w/.png"
+                                        alt="Weather Icon">
+                                    <figcaption id="weather-desc"></figcaption>
+                                </figure>
+                                <div id="humidity"></div>
+                            </div>
+                            <div id="weather2">
+                                <div id="forecast">
+                                    <h3>Tomorrow</h3>
+                                    <figure>
+                                        <img id="forecast-icon" src="https://openweathermap.org/img/w/.png"
+                                            alt="Forecast Icon">
+                                        <figcaption id="forecast-desc"></figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-home">
+                <h3>Contact Us</h3>
+                <div id="contact-home">
+                    <div id="phone">
+                        <h3>Phone Number</h3>
+                        <p>📞 +52 987 654 3210</p>
+                    </div>
+                    <div id="location1">
+                        <h3>Location 1</h3>
+                        <p>Near Playa del Carmen-Cozumel Ferry Dock</p>
+                        <p>Avenida Rafael E. Melgar #101 Centro, </p>
+                        <p>77600 San Miguel de Cozumel, Q.R., Mexico</p>
+                    </div>
+                    <div id="location2">
+                        <h3>Location 2</h3>
+                        <p>Near Terminal Puerta Maya</p>
+                        <p>Carretera Costera Sur Km 4.5,</p>
+                        <p>77600 San Miguel de Cozumel, Q.R., Mexico</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -125,16 +193,16 @@
         <p>Scoots © 2024</p>
         <div class="socials">
             <a href="https://www.facebook.com/">
-                <img src="images/facebook.webp" alt="facebook logo">
+                <img src="images/facebook.webp" alt="facebook logo" loading="lazy">
             </a>
             <a href="https://www.instagram.com/">
-                <img src="images/instagram.webp" alt="instagram logo">
+                <img src="images/instagram.webp" alt="instagram logo" loading="lazy">
             </a>
             <a href="https://x.com/?lang=en">
-                <img src="images/x.webp" alt="x logo">
+                <img src="images/x.webp" alt="x logo" loading="lazy">
             </a>
             <a href="https://www.tiktok.com/explore">
-                <img src="images/tiktok.webp" alt="tiktok logo">
+                <img src="images/tiktok.webp" alt="tiktok logo" loading="lazy">
             </a>
         </div>
     </footer>

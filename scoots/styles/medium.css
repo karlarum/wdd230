@@ -19,7 +19,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* 
     .weather {
         margin: 10px;
-    }
+    } */
 }
