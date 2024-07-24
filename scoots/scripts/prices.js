@@ -27,7 +27,6 @@ const displayPricing = (pricing) => {
         rentalType.textContent = item.rentalType;
         image.setAttribute('src', item.image);
         image.setAttribute('alt', item.rentalType);
-        image.setAttribute('loading', 'lazy');
 
         maxPersons.innerHTML = `Max Riders: ${item.maxPersons}`;
         reservationHalfDay.innerHTML = `Half Day Reservation: ${item.reservation.halfDay}`;

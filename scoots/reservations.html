@@ -38,55 +38,62 @@
         </ul>
     </nav>
 
-    <main class="reservationsPage">
-        <section class="agreements">
-            <h2>Rental Services and Agreements</h2>
-            <ul>
-                <li>A $50 security deposit is required to confirm reservations.</li>
-                <li>A valid drivers license is required in hand at the time of rental.</li>
-                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-                <li>Fuel charge is not included.</li>
-                <li>Unlimited mileage.</li>
-                <li>Liability insurance is included.</li>
-                <li>Damage insurance is available for purchase.</li>
-                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
-                <li>Rentals may be returned to either physical location.</li>
-            </ul>
+    <main>
+        <section class="reservation-header">
+            <h2>Reservation Form and Agreements</h2>
+            <p>Please read the agreements and fill out the form when you are ready to reserve your rental.</p>
         </section>
-        <section class="reservation-form">
-            <form class="reservation" action="thankyou.html">
-                <fieldset>
-                    <legend>Reserve Your Rental</legend>
-                    <label>Full Name<input type="text" name="name" required></label>
-                    <label>Phone<input type="tel" name="phone" placeholder="1234567890"></label>
-                    <label>Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                    <label>Home State/Country<input type="text" name="homeState" placeholder="e.g. Florida / USA"
-                            required></label>
-                    <label>Cruise Line<input type="text" name="cruise" placeholder="Norwegian Cruise Line"></label>
-                    <label>Start Date<input type="date" name="sdate" required></label>
-                    <label>End Date<input type="date" name="eDate" required></label>
-                    <div>Select Rental Period</div>
-                    <label class="rental-option">Half Day<input type="radio" name="day" value="half"></label>
-                    <label class="rental-option">Full Day<input type="radio" name="day" value="full"></label>
-                    <div>Rental Type</div>
-                    <label class="rental-type">Honda Metro
-                        Scooter<input type="checkbox" name="metro" value="yes"></label>
-                    <label class="rental-type">Honda Dio Scooter<input type="checkbox" name="dio" value="yes"></label>
-                    <label class="rental-type">Honda PCX150
-                        Scooter<input type="checkbox" name="pcx" value="yes"></label>
-                    <label class="rental-type">Honda Pioneer
-                        ATV<input type="checkbox" name="pioneer" value="yes"></label>
-                    <label class="rental-type">Jeep Wrangler 4
-                        Door<input type="checkbox" name="four" value="yes"></label>
-                    <label class="rental-type">Jeep Wrangler 2
-                        Door<input type="checkbox" name="two" value="yes"></label>
-                    <label>Number of Rentals<input type="number" name="number" min="1"></label>
-                    <label>Comments<textarea name="comments" rows="5"
-                            placeholder="Special Accommodations"></textarea></label>
-                </fieldset>
-                <input type="submit" name="reservationSub" value="Make Reservation">
-            </form>
+        <section class="reservationsPage">
+            <section class="agreements">
+                <h2>Rental Services and Agreements</h2>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </section>
+            <section class="reservation-form">
+                <form class="reservation" action="thankyou.html">
+                    <fieldset>
+                        <legend>Reserve Your Rental</legend>
+                        <label>Full Name<input type="text" name="name" required></label>
+                        <label>Phone<input type="tel" name="phone" placeholder="1234567890"></label>
+                        <label>Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label>Home State/Country<input type="text" name="homeState" placeholder="e.g. Florida / USA"
+                                required></label>
+                        <label>Cruise Line<input type="text" name="cruise" placeholder="Norwegian Cruise Line"></label>
+                        <label>Start Date<input type="date" name="sdate" required></label>
+                        <label>End Date<input type="date" name="eDate" required></label>
+                        <div>Select Rental Period</div>
+                        <label class="rental-option">Half Day<input type="radio" name="day" value="half"></label>
+                        <label class="rental-option">Full Day<input type="radio" name="day" value="full"></label>
+                        <div>Rental Type</div>
+                        <label class="rental-type">Honda Metro
+                            Scooter<input type="checkbox" name="metro" value="yes"></label>
+                        <label class="rental-type">Honda Dio Scooter<input type="checkbox" name="dio"
+                                value="yes"></label>
+                        <label class="rental-type">Honda PCX150
+                            Scooter<input type="checkbox" name="pcx" value="yes"></label>
+                        <label class="rental-type">Honda Pioneer
+                            ATV<input type="checkbox" name="pioneer" value="yes"></label>
+                        <label class="rental-type">Jeep Wrangler 4
+                            Door<input type="checkbox" name="four" value="yes"></label>
+                        <label class="rental-type">Jeep Wrangler 2
+                            Door<input type="checkbox" name="two" value="yes"></label>
+                        <label>Number of Rentals<input type="number" name="number" min="1"></label>
+                        <label>Comments<textarea name="comments" rows="5"
+                                placeholder="Special Accommodations"></textarea></label>
+                    </fieldset>
+                    <input type="submit" name="reservationSub" value="Make Reservation">
+                </form>
+            </section>
         </section>
     </main>
 

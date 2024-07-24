@@ -77,13 +77,14 @@
         flex-direction: row;
     }
 
-    .map,
-    .container {
-        max-width: 50%;
-    }
-
     iframe {
         height: 300px;
+        width: 70%;
+    }
+
+    .container {
+        padding-left: 50px;
+        width: 80%;
     }
 
     /* thank you page */
