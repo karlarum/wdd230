@@ -118,4 +118,18 @@
         gap: 20px;
         padding: 20px;
     }
+
+    /* reservations page */
+
+    .reservationsPage {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .agreements,
+    .reservation-form {
+        flex: 1;
+    }
+
+
 }

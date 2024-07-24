@@ -147,7 +147,7 @@ nav.open ul {
 
 .welcome {
     text-align: center;
-    background-color: #ffecce;
+    background-color: #D6CCC2;
     margin: 10px;
     padding: 20px 10px;
 }
@@ -219,7 +219,7 @@ nav.open ul {
 /* weather */
 .weather-contact {
     padding: 20px;
-    background-color: #ffecce;
+    background-color: #EDEDE9;
     text-align: center;
 }
 
@@ -249,7 +249,7 @@ nav.open ul {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    background-color: #ff91006c;
+    background-color: #D6CCC2;
 }
 
 /* footer */
@@ -284,7 +284,7 @@ footer .socials a {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #ffecce;
+    background-color: #EDEDE9;
     gap: 0;
     flex-direction: column;
 }
@@ -297,7 +297,9 @@ footer .socials a {
 }
 
 .map h3 {
-    font-family: 'Rock Salt';
+    font-family: 'Quicksand';
+    font-weight: 400;
+    font-size: 1.5em;
     padding: 10px;
 }
 
@@ -321,7 +323,7 @@ iframe {
     font-size: 30px;
     font-weight: 400;
     padding: 20px 0;
-    font-family: 'Rock Salt';
+    font-family: 'Quicksand';
 }
 
 fieldset {
@@ -336,7 +338,7 @@ fieldset {
 #contact textarea {
     width: 100%;
     border: 1px;
-    background: #e2d1b5;
+    background: #D6CCC2;
     border-radius: 5px;
     margin: 0 0 5px;
     padding: 10px;
@@ -346,7 +348,7 @@ input[type="submit"] {
     cursor: pointer;
     width: 100%;
     border: none;
-    background: #e2d1b5;
+    background: #D6CCC2;
     margin: 0 0 5px;
     padding: 10px;
     font-size: 15px;
@@ -354,7 +356,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background: #A9B3A3;
+    background: #ffa836;
 }
 
 #contact textarea {
@@ -369,7 +371,7 @@ input[type="submit"]:hover {
 }
 
 .contact-phone h3 {
-    font-family: 'Rock Salt';
+    font-family: 'Quicksand';
     font-size: 2rem;
     font-weight: 400;
     padding: 20px 0;
@@ -513,5 +515,95 @@ thead tr.row2 {
 }
 
 .reservation-button:hover {
-    background-color: #A9B3A3;
+    background-color: #ffa836;
+}
+
+/* reservations page */
+
+.reservationsPage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px;
+}
+
+.agreements h2 {
+    padding-bottom: 5px;
+}
+
+.agreements h2,
+legend {
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: 'Quicksand';
+}
+
+.agreements ul li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.agreements ul li::before {
+    content: "🔸";
+}
+
+.reservation-form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #EDEDE9;
+}
+
+.agreements {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #EDEDE9;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #D6CCC2;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 5px;
+}
+
+.rental-option,
+.rental-type {
+    display: inline-flex;
+    align-items: center;
+}
+
+.reservation div {
+    font-weight: bold;
 }

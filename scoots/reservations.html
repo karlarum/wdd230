@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots Rental Website</title>
-    <!-- example DESCRIPTION: A chamber of commerce website for the city of Niceville, Florida. -->
-    <meta name="description" content="A rental website for Scoots Rental's in Cozumel, Mexico">
+    <title>Reservation Page for Scoots Rental Website</title>
+    <meta name="description" content="A reservation page for for Scoots Rental Company in Cozumel, Mexico">
     <meta name="author" content="Karla Rummler">
-    <!-- example OG TITLE: Niceville Chamber of Commerce -->
-    <meta property="og:title" content="Scoots Rentals">
+    <meta property="og:title" content="Reservation Page for Scoots Rental Company">
     <meta property="og:type" content="website">
-    <!-- CHANGE IMAGE BEFORE TURNING IN -->
-    <meta property="og:image" content="http://via.placeholder.com/100x100">
-    <!-- example OG URL: https://karlarum.github.io/wdd230/scoots/index.html -->
+    <meta property="og:image"
+        content="https://unsplash.com/photos/a-group-of-palm-trees-blowing-in-the-wind-rYYc5F5iCg8">
     <meta property="og:url" content="https://karlarum.github.io/wdd230/scoots/index.html">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rock+Salt&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -23,12 +22,12 @@
 </head>
 
 <body>
-
     <header>
         <h1>Scoots</h1>
+        <div class="menu">
+            <button id="menu"></button>
+        </div>
     </header>
-
-    <button id="menu"></button>
 
     <nav>
         <ul>
@@ -39,45 +38,77 @@
         </ul>
     </nav>
 
-    <main>
-        <h1>Site Feedback Form</h1>
-        <form method="get" action="record.html" class="wf1">
-            <fieldset>
-                <legend>User Information</legend>
-                <div id="formmessage"></div>
-                <label>First Name <input type="text" name="fname" required></label>
-                <label>Last Name <input type="text" name="lname" required></label>
-                <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
-                <label>Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label>Home State <input type="text" name="state" required></label>
-            </fieldset>
-
-            <input type="submit" value="Submit Feedback Rating">
-        </form>
+    <main class="reservationsPage">
+        <section class="agreements">
+            <h2>Rental Services and Agreements</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </section>
+        <section class="reservation-form">
+            <form class="reservation" action="thankyou.html">
+                <fieldset>
+                    <legend>Reserve Your Rental</legend>
+                    <label>Full Name<input type="text" name="name" required></label>
+                    <label>Phone<input type="tel" name="phone" placeholder="1234567890"></label>
+                    <label>Email<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label>Home State/Country<input type="text" name="homeState" placeholder="e.g. Florida / USA"
+                            required></label>
+                    <label>Cruise Line<input type="text" name="cruise" placeholder="Norwegian Cruise Line"></label>
+                    <label>Start Date<input type="date" name="sdate" required></label>
+                    <label>End Date<input type="date" name="eDate" required></label>
+                    <div>Select Rental Period</div>
+                    <label class="rental-option">Half Day<input type="radio" name="day" value="half"></label>
+                    <label class="rental-option">Full Day<input type="radio" name="day" value="full"></label>
+                    <div>Rental Type</div>
+                    <label class="rental-type">Honda Metro
+                        Scooter<input type="checkbox" name="metro" value="yes"></label>
+                    <label class="rental-type">Honda Dio Scooter<input type="checkbox" name="dio" value="yes"></label>
+                    <label class="rental-type">Honda PCX150
+                        Scooter<input type="checkbox" name="pcx" value="yes"></label>
+                    <label class="rental-type">Honda Pioneer
+                        ATV<input type="checkbox" name="pioneer" value="yes"></label>
+                    <label class="rental-type">Jeep Wrangler 4
+                        Door<input type="checkbox" name="four" value="yes"></label>
+                    <label class="rental-type">Jeep Wrangler 2
+                        Door<input type="checkbox" name="two" value="yes"></label>
+                    <label>Number of Rentals<input type="number" name="number" min="1"></label>
+                    <label>Comments<textarea name="comments" rows="5"
+                            placeholder="Special Accommodations"></textarea></label>
+                </fieldset>
+                <input type="submit" name="reservationSub" value="Make Reservation">
+            </form>
+        </section>
     </main>
 
     <footer>
         <p>Scoots © 2024</p>
         <div class="socials">
             <a href="https://www.facebook.com/">
-                <img src="images/facebook.webp" alt="facebook logo">
+                <img src="images/facebook.webp" alt="facebook logo" loading="lazy">
             </a>
             <a href="https://www.instagram.com/">
-                <img src="images/instagram.webp" alt="instagram logo">
+                <img src="images/instagram.webp" alt="instagram logo" loading="lazy">
             </a>
             <a href="https://x.com/?lang=en">
-                <img src="images/x.webp" alt="x logo">
+                <img src="images/x.webp" alt="x logo" loading="lazy">
             </a>
             <a href="https://www.tiktok.com/explore">
-                <img src="images/tiktok.webp" alt="tiktok logo">
+                <img src="images/tiktok.webp" alt="tiktok logo" loading="lazy">
             </a>
         </div>
     </footer>
 
-    <script src="scripts/banner.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/weather.js"></script>
-
 </body>
 
 </html>
