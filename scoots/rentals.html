@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots Rental Website</title>
-    <!-- example DESCRIPTION: A chamber of commerce website for the city of Niceville, Florida. -->
-    <meta name="description" content="">
+    <title>Rental Page for Scoots Rental Website</title>
+    <meta name="description" content="A rental page for for Scoots Rental Company in Cozumel, Mexico">
     <meta name="author" content="Karla Rummler">
-    <!-- example OG TITLE: Niceville Chamber of Commerce -->
-    <meta property="og:title" content="">
+    <meta property="og:title" content="Rental Page for Scoots Rental Company">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="">
-    <!-- example OG URL: https://karlarum.github.io/wdd230/chamber/index.html -->
-    <meta property="og:url" content="">
+    <meta property="og:image"
+        content="https://unsplash.com/photos/a-group-of-palm-trees-blowing-in-the-wind-rYYc5F5iCg8">
+    <meta property="og:url" content="https://karlarum.github.io/wdd230/scoots/index.html">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -24,26 +23,77 @@
 <body>
     <header>
         <h1>Scoots</h1>
+        <div class="menu">
+            <button id="menu"></button>
+        </div>
     </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="rental-table">
+            <table>
+                <thead>
+                    <tr class="row1">
+                        <th colspan="4" scope="colgroup">Rental Pricing</th>
+                    </tr>
+                    <tr class="row2">
+                        <th colspan="2" scope="col">Reservation</th>
+                        <th colspan="2" scope="col">Walk In</th>
+                    </tr>
+                    <tr class="row3">
+                        <th scope="col">Half Day</th>
+                        <th scope="col">Full Day</th>
+                        <th scope="col">Half Day</th>
+                        <th scope="col">Full Day</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3 hours</td>
+                        <td>24 hours</td>
+                        <td>3 hours</td>
+                        <td>24 hours</td>
+                    </tr>
+                    <tr>
+                        <td>$20+</td>
+                        <td>$30+</td>
+                        <td>$25+</td>
+                        <td>$35+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div id="pricingContainer"></div>
+    </main>
+
+    <footer>
+        <p>Scoots © 2024</p>
+        <div class="socials">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook.webp" alt="facebook logo" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram.webp" alt="instagram logo" loading="lazy">
+            </a>
+            <a href="https://x.com/?lang=en">
+                <img src="images/x.webp" alt="x logo" loading="lazy">
+            </a>
+            <a href="https://www.tiktok.com/explore">
+                <img src="images/tiktok.webp" alt="tiktok logo" loading="lazy">
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/prices.js"></script>
+
 </body>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">Rentals</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-</nav>
-
-<main></main>
-<footer>
-    <p>Scoots © 2024</p>
-    <div class="socials">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-    </div>
-</footer>
 
 </html>

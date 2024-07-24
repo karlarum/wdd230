@@ -420,3 +420,98 @@ input[type="submit"]:hover {
     padding: 10px;
     gap: 20px;
 }
+
+/* rentals page */
+
+.rental-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+table {
+    border: thin solid #333333cc;
+    box-shadow: 0 0 10px #808080;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.466);
+    background-color: #E3EBFF;
+}
+
+thead tr:nth-child(odd) {
+    background-color: #D6CCC2;
+}
+
+thead tr.row2 {
+    background-color: #E3EBFF;
+    color: black;
+}
+
+/* JSON data */
+
+#pricingContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.pricing-item {
+    border: 2px solid rgba(128, 128, 128, 0.603);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 10px grey;
+    max-width: 335px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    background-color: #D6CCC2;
+}
+
+.pricing-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.pricing-item p {
+    margin: 5px 0;
+}
+
+.pricing-item img {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.reservation-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #EDEDE9;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.reservation-button:hover {
+    background-color: #A9B3A3;
+}

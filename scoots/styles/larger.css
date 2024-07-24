@@ -97,4 +97,25 @@
     .thankyou-card3 {
         padding: 1rem;
     }
+
+    /* rentals page */
+
+    th {
+        font-size: 1.5em;
+    }
+
+    td {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+    /* JSON data */
+
+    #pricingContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
 }
