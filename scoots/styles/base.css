@@ -265,6 +265,11 @@ footer {
     width: 100%;
 }
 
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
 footer .socials {
     display: flex;
     justify-content: center;
